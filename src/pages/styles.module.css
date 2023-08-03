@@ -1,0 +1,30 @@
+.main {
+    padding: 46px;
+ 
+    min-width: 90vw;
+    height: 100%;
+ }
+
+.white_line {
+   height: 2px;
+    align-self: stretch;
+    background: var(--sand-e-6-e-0-d-7, #E6E0D7);
+    margin-bottom: 24px;
+
+}
+
+.gradient_space {
+    height: 70vh;
+    width: 100%;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,63 @@
+.footer {
+  height: 4vh;
+  color: #f2f2f2;
+  padding: 0;
+  text-align: center;
+  font-family: 'Neue Haas Grotesk', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.movingTextContainer {
+  overflow: hidden;
+  height: 26px;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+    align-items: center; /* Center the moving text horizontally within the container */
+
+}
+
+.movingText {
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%; 
+  padding-top:0px;
+ 
+  margin:0;
+  position: relative;
+}
+
+.movingText span {
+  display: inline-block;
+  animation: scrollTextStart 40s infinite linear;
+   margin-right: 3px;
+   margin-left: 3px;
+   
+}
+
+.white_line2  {
+     height: 2px;
+     margin-top: 24px;
+    align-self: stretch;
+    background: var(--sand-e-6-e-0-d-7, #E6E0D7);
+}
+
+.white_line3 {
+     height: 2px;
+     margin-top: 2px;
+    align-self: stretch;
+    background: var(--sand-e-6-e-0-d-7, #E6E0D7);
+}
+
+
+
+@keyframes scrollTextStart {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

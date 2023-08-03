@@ -1,0 +1,98 @@
+.main {
+  padding: 46px;
+}
+
+.white_line {
+  height: 2px;
+  align-self: stretch;
+  background: var(--sand-e-6-e-0-d-7, #E6E0D7);
+  margin-bottom: 24px;
+}
+
+.gradient_space {
+  height: 70vh;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.gradient_space_wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: var(--sand-e-6-e-0-d-7, #E6E0D7);
+  border-radius: 0px 26px 26px 0px;
+  background: var(--black-161717, #161717);
+  height: 100%;
+  border-radius: 26px;
+  position: absolute;
+   width: 45%;
+  left: 0; 
+  z-index: 1; 
+  padding-left: 173px;
+  padding-right: 109px;
+
+
+}
+
+.aboutText h1 {
+  color: var(--sand-e-6-e-0-d-7, #E6E0D7);
+  font-family: 'Neue Haas Grotesk', sans-serif;
+  font-size: 45.33px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
+.letsTalk {
+  display: flex;
+  flex-direction: column;
+  height: 134px;
+  width: 498px;
+  gap: 48px; 
+  align-items: flex-start; 
+  justify-content: center; 
+  position: absolute;
+  z-index: 10;
+  bottom: 50%; 
+}
+
+.button a {
+  color: var(--sand-e-6-e-0-d-7, #E6E0D7);
+  text-decoration: none;
+  font-family: 'Neue Haas Grotesk', sans-serif;
+  font-size: 18px; 
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 32px;
+  text-align: center;
+}
+
+
+.button {
+  width: 437px;
+  height: 32px;
+  border: 2px solid #E6E0D7;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Add this line to center the text horizontally */
+}
+
+
+
