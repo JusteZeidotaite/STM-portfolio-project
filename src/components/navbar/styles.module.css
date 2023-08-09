@@ -134,3 +134,44 @@ align-self: stretch;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
 }
+
+
+
+@media screen and (max-width: 500px) {
+  .menuIcon {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 8px;
+    z-index: 10;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .show .navList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    right: 10px; 
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Additional CSS for desktop and tablet views */
+@media screen and (min-width: 501px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+  }
+}
