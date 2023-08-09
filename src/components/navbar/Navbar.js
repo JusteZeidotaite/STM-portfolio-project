@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 
-// Import the burger image using require
-import burgerIcon from "../../assets/burger.png";
-
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -20,11 +17,22 @@ const Navbar = () => {
       </div>
 
       <div className={styles.menuIcon} onClick={toggleMenu}>
-        {/* Use the imported burger icon */}
-        <img src={burgerIcon} alt="Hamburger Menu" />
+        <img src="/burger.svg" alt="Menu" />
       </div>
 
-      {/* Rest of your code */}
+      <ul className={showMenu ? `${styles.navList} ${styles.show}` : styles.navList}>
+        <li>
+          <a href="https://dribbble.com/Marmokas" target="_blank" rel="noopener noreferrer">
+            WORKS
+          </a>
+        </li>
+        <li>
+          <a href="/about">ABOUT</a>
+        </li>
+        <li>
+          <a href="/contacts">CONTACT</a>
+        </li>
+      </ul>
     </div>
   );
 };

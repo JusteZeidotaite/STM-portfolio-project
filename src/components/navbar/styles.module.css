@@ -7,10 +7,20 @@ align-self: stretch;
 
  }
 
+ .menuIcon {
+  display: none;
+  
+}
+
  .navbar ul {
    display: flex;
    gap: 20px;
  }
+
+ .show {
+  display: flex;
+ 
+}
 
  
  .navbar li {
@@ -56,38 +66,8 @@ align-self: stretch;
 
 
  }
-
-
-
  
- @media screen and (max-width: 767px){
-  .navbar li a {
-     font-size: 16px;
-     font-weight: 400;
-    width: 132px;
-    height: 24px;
-  }
- 
-   .navbar ul {
-    display: flex;
-    gap: 10px;
-  }
- 
- }
 
-@media screen and (max-width: 500px) {
-
-  .navbar li {
-    display: none;
-  }
-
- 
-.menuIcon {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  /* Add styles for your hamburger icon image */
-}
 
 .modal {
   display: none;
@@ -106,15 +86,51 @@ align-self: stretch;
   align-items: center;
 }
 
-.show {
-  display: flex;
-  flex-direction: column;
-}
 
 
+  
+
+
+ 
+ 
+ @media screen and (max-width: 767px){
+  .navbar li a {
+     font-size: 16px;
+     font-weight: 400;
+    width: 132px;
+    height: 24px;
+  }
+ 
+   .navbar ul {
+    display: flex;
+    gap: 10px;
+  }
+ 
+ }
+
+@media screen and (max-width: 500px) {
+  .menuIcon {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 8px;
+    z-index: 10;
   }
 
+  .navbar ul {
+    display: none;
+  }
 
- 
- 
-
+  .show .navList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    right: 10px; 
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+}
