@@ -221,6 +221,11 @@
   .button:hover {
     background-color: #161717;
     border-color:#161717;
+    color:#E6E0D7;
+  }
+
+  .button a:hover {
+    color:#E6E0D7;
   }
 
   
