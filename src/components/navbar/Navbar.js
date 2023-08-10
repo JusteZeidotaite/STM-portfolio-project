@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={styles.navbar}>
+    <div className={showMenu ? `${styles.navbar} ${styles.show}` : styles.navbar}>
       <div>
         <a className={styles.logo} href="/">
           STM
@@ -20,7 +20,7 @@ const Navbar = () => {
         <img src="/burger.svg" alt="Menu" />
       </div>
 
-      <ul className={showMenu ? `${styles.navList} ${styles.show}` : styles.navList}>
+      <ul className={styles.navList}>
         <li>
           <a href="https://dribbble.com/Marmokas" target="_blank" rel="noopener noreferrer">
             WORKS
